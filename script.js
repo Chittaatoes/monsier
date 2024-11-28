@@ -1,3 +1,40 @@
+// Enable Swiping on the Tabs
+const menuTabs = document.querySelector('.menu-tabs');
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+menuTabs.addEventListener('mousedown', (e) => {
+  isDown = true;
+  menuTabs.classList.add('active');
+  startX = e.pageX - menuTabs.offsetLeft;
+  scrollLeft = menuTabs.scrollLeft;
+});
+
+menuTabs.addEventListener('mouseleave', () => {
+  isDown = false;
+  menuTabs.classList.remove('active');
+});
+
+menuTabs.addEventListener('mouseup', () => {
+  isDown = false;
+  menuTabs.classList.remove('active');
+});
+
+menuTabs.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - menuTabs.offsetLeft;
+  const walk = (x - startX) * 2; // Adjust scrolling speed
+  menuTabs.scrollLeft = scrollLeft - walk;
+});
+
+function toggleMenu() {
+  const menuTabs = document.querySelector('.menu-tabs');
+  menuTabs.classList.toggle('show');
+}
+
 // Get the floating search button and input field
 const floatingSearch = document.getElementById('floatingSearch');
 const searchInput = document.getElementById('searchInput');
