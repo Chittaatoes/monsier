@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector(".container-header");
+  const searchInput = document.querySelector(".search-input");
+
+  // Menghitung tinggi header dan menetapkan posisi search input
+  const headerHeight = header.offsetHeight;
+  const additionalOffset = window.innerHeight * 0.01; // 3% dari tinggi viewport
+
+  // Tetapkan posisi search input agar berada 3% di bawah header
+  searchInput.style.top = `${headerHeight + additionalOffset}px`;
+});
+
+
 // Enable Swiping on the Tabs
 const menuTabs = document.querySelector('.menu-tabs');
 
