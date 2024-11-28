@@ -28,54 +28,57 @@
     </div>
 
     <!-- Menu Tabs with Hamburger -->
-    <nav class="menu-tabs">
+    <div class="menu-tabs-wrapper">
       <button id="hamburger-menu" class="hamburger-icon" onclick="toggleMenu()">
         &#9776; <!-- Hamburger icon -->
       </button>
-      <button class="tab" onclick="scrollToCategory('promo')">Promo & Package</button>
-      <button class="tab" onclick="scrollToCategory('brunch')">Brunch Menu</button>
-      <button class="tab" onclick="scrollToCategory('sandwich')">Sandwich</button>
-      <button class="tab" onclick="scrollToCategory('salad')">Salad</button>
-      <button class="tab" onclick="scrollToCategory('soup')">Soup</button>
-      <button class="tab" onclick="scrollToCategory('entre')">Entre</button>
-      <button class="tab" onclick="scrollToCategory('side')">Side</button>
-      <button class="tab" onclick="scrollToCategory('pasta')">Pasta</button>
-      <button class="tab" onclick="scrollToCategory('main')">Mains</button>
-      <button class="tab" onclick="scrollToCategory('rice')">Rice</button>
-      <button class="tab" onclick="scrollToCategory('dessert')">Dessert</button>
-      <button class="tab" onclick="scrollToCategory('pastry')">Pastry</button>
-      <button class="tab" onclick="scrollToCategory('drinks')">Drinks</button>
-    </nav>
-  </header>
-</div>
-
-<div class="container">
-  <!-- Menu Content -->
-  <section id="menu-content">
-    <!-- Category: Promo -->
-    <div class="menu-category" id="promo">
-      <h3>Package & Promo</h3>
-      <div class="menu-grid">
-        <div class="menu-item" data-category="paket sweet candles">
-          <img src="img/display/packagea.jpg" alt="package a">
-          <h4>Sweet Candles Package A</h4>
-          <p>Rp159.000</p>
-          <button class="add-btn">Add</button>
-        </div>
-        <div class="menu-item" data-category="paket sweet candles">
-          <img src="img/display/packageb.jpg" alt="package b">
-          <h4>Sweet Candles Package B</h4>
-          <p>Rp188.000</p>
-          <button class="add-btn">Add</button>
-        </div>
-        <div class="menu-item" data-category="paket promo">
-          <img src="img/display/clock.jpg" alt="promo">
-          <h4>Coffee O'Clock</h4>
-          <p>Rp39.000</p>
-          <button class="add-btn">Add</button>
-        </div>
+      <div class="menu-tabs">
+        <button class="tab" onclick="scrollToCategory('promo')">Promo & Package</button>
+        <button class="tab" onclick="scrollToCategory('brunch')">Brunch Menu</button>
+        <button class="tab" onclick="scrollToCategory('sandwich')">Sandwich</button>
+        <button class="tab" onclick="scrollToCategory('salad')">Salad</button>
+        <button class="tab" onclick="scrollToCategory('soup')">Soup</button>
+        <button class="tab" onclick="scrollToCategory('entre')">Entre</button>
+        <button class="tab" onclick="scrollToCategory('side')">Side</button>
+        <button class="tab" onclick="scrollToCategory('pasta')">Pasta</button>
+        <button class="tab" onclick="scrollToCategory('main')">Mains</button>
+        <button class="tab" onclick="scrollToCategory('rice')">Rice</button>
+        <button class="tab" onclick="scrollToCategory('dessert')">Dessert</button>
+        <button class="tab" onclick="scrollToCategory('pastry')">Pastry</button>
+        <button class="tab" onclick="scrollToCategory('drinks')">Drinks</button>
       </div>
     </div>
+
+  </div>
+    
+
+  <div class="container">
+    <!-- Menu Content -->
+    <section id="menu-content">
+      <!-- Category: Promo -->
+      <div class="menu-category" id="promo">
+        <h3>Package & Promo</h3>
+        <div class="menu-grid">
+          <div class="menu-item" data-category="paket sweet candles">
+            <img src="img/display/packagea.jpg" alt="package a">
+            <h4>Sweet Candles Package A</h4>
+            <p>Rp159.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="paket sweet candles">
+            <img src="img/display/packageb.jpg" alt="package b">
+            <h4>Sweet Candles Package B</h4>
+            <p>Rp188.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="paket promo">
+            <img src="img/display/clock.jpg" alt="promo">
+            <h4>Coffee O'Clock</h4>
+            <p>Rp39.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
 
 
       <!-- Category: Brunch -->
@@ -260,7 +263,6 @@
           <button class="cart-checkout-btn" onclick="checkout()">Checkout</button>
         </div>
       </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
