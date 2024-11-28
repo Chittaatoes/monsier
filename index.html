@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monsier Spoon Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Search Button -->
+<div class="floating-search" id="floatingSearch">
+  <input type="text" placeholder="Search..." id="searchInput" class="search-input" />
+  <button class="search-btn" id="searchBtn">🔍</button>
+</div>
+
+<div id="menuItemsContainer"></div>
+  <!-- Daftar menu akan ditampilkan di sini -->
+</div>
+
+  
+<div class="container-header">
+  <header>
+    <!-- Restaurant Info -->
+    <div class="restaurant-info">
+      <h2>Monsier Spoon - SMS</h2>
+      <p>Open today, 10:00-23:00</p>
+    </div>
+
+    <!-- Menu Tabs with Hamburger -->
+    <nav class="menu-tabs">
+      <button id="hamburger-menu" class="hamburger-icon" onclick="toggleMenu()">
+        &#9776; <!-- Hamburger icon -->
+      </button>
+      <button class="tab" onclick="scrollToCategory('promo')">Promo & Package</button>
+      <button class="tab" onclick="scrollToCategory('brunch')">Brunch Menu</button>
+      <button class="tab" onclick="scrollToCategory('sandwich')">Sandwich</button>
+      <button class="tab" onclick="scrollToCategory('salad')">Salad</button>
+      <button class="tab" onclick="scrollToCategory('soup')">Soup</button>
+      <button class="tab" onclick="scrollToCategory('entre')">Entre</button>
+      <button class="tab" onclick="scrollToCategory('side')">Side</button>
+      <button class="tab" onclick="scrollToCategory('pasta')">Pasta</button>
+      <button class="tab" onclick="scrollToCategory('main')">Mains</button>
+      <button class="tab" onclick="scrollToCategory('rice')">Rice</button>
+      <button class="tab" onclick="scrollToCategory('dessert')">Dessert</button>
+      <button class="tab" onclick="scrollToCategory('pastry')">Pastry</button>
+      <button class="tab" onclick="scrollToCategory('drinks')">Drinks</button>
+    </nav>
+  </header>
+</div>
+
+<div class="container">
+  <!-- Menu Content -->
+  <section id="menu-content">
+    <!-- Category: Promo -->
+    <div class="menu-category" id="promo">
+      <h3>Package & Promo</h3>
+      <div class="menu-grid">
+        <div class="menu-item" data-category="paket sweet candles">
+          <img src="img/display/packagea.jpg" alt="package a">
+          <h4>Sweet Candles Package A</h4>
+          <p>Rp159.000</p>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="menu-item" data-category="paket sweet candles">
+          <img src="img/display/packageb.jpg" alt="package b">
+          <h4>Sweet Candles Package B</h4>
+          <p>Rp188.000</p>
+          <button class="add-btn">Add</button>
+        </div>
+        <div class="menu-item" data-category="paket promo">
+          <img src="img/display/clock.jpg" alt="promo">
+          <h4>Coffee O'Clock</h4>
+          <p>Rp39.000</p>
+          <button class="add-btn">Add</button>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Category: Brunch -->
+      <div class="menu-category" id="brunch">
+        <h3>Brunch Menu</h3>
+        <div class="menu-grid">
+          <div class="menu-item" data-category="brunch sehat granola">
+            <img src="img/brunch/healthybowls.jpg" alt="Super Healthy Bowl">
+            <h4>Super Healthy Bowl</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="brunch alpukat">
+            <img src="img/brunch/bruschetta.jpg" alt="Avocado Bruschetta">
+            <h4>Avocado Bruschetta</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="brunch udang">
+            <img src="img/brunch/basilicoprawncroissantcup.jpg" alt="Basilico Prawn Croissant Cup">
+            <h4>Basilico Prawn Croissant Cup</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="brunch beef bacon">
+            <img src="img/brunch/beefbacon.jpg" alt="Beef Bacon Egg on Toast">
+            <h4>Beef Bacon Egg on Toast</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="brunch savoury">
+            <img src="img/brunch/cheeseandtomatocroissantcup.jpg" alt="Cheese & Tomato Croissant Cup">
+            <h4>Cheese & Tomato Croissant Cup</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="brunch benedict">
+            <img src="img/brunch/benedict.jpg" alt="benedict">
+            <h4>Croissant Benedict</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="brunch breakfast">
+            <img src="img/brunch/frenchtoast.jpg" alt="frenchtoast">
+            <h4>French Toast</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="brunch mix salad">
+            <img src="img/brunch/quiche.jpg" alt="name">
+            <h4>Quiche Lorraine</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="brunch">
+            <img src="img/brunch/granola.jpg" alt="name">
+            <h4>Monsier Spoon Granola</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Category: Sandwich -->
+      <div class="menu-category" id="sandwich">
+        <h3>Sandwich</h3>
+        <div class="menu-grid">
+          <div class="menu-item" data-category="sandwich wagyu beef scrambled egg">
+            <img src="img/sandwich/wagyusignature.jpg" alt="scrambled egg wagyu beef">
+            <h4>Wagyu signature</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="sandwich chicken">
+            <img src="img/sandwich/buttermilkchicken.jpg" alt="buttermilk chicken">
+            <h4>buttermilk chicken</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="sandwich pastrami">
+            <img src="img/sandwich/pulledbrisketandegg.jpg" alt="name">
+            <h4>Pulled Brisket & Egg</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="sandwich mayo egg">
+            <img src="img/sandwich/tamagokatsumortadella.jpg" alt="name">
+            <h4>Tamago Katsu Mortadella</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="sandwich sauted sauteed mushroom">
+            <img src="img/sandwich/truffle scrambled egg.jpg" alt="name">
+            <h4>Truffle Scrambled Egg</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="sandwich chicken">
+            <img src="img/sandwich/Smoked Chicken Croissant.jpeg" alt="name">
+            <h4>Smoked Chicken Croissant</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="sandwich ham">
+            <img src="img/sandwich/doublecheeseandham.jpg" alt="name">
+            <h4>Double Cheese & Ham</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="sandwich mayo">
+            <img src="img/sandwich/themonsierspoonclubsandwhich.jpg" alt="name">
+            <h4>The Monsier Spoon Club Sandwich</h4>
+            <p>Rp75.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="sandwich baguette">
+            <img src="img/sandwich/frenchdippulledbeefbaguette.jpg" alt="name">
+            <h4>French dip pulled beef baguette</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="sandwich baguette">
+            <img src="img/sandwich/toastedmushroombaguette.jpg" alt="name">
+            <h4>Toasted mushroom baguette</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Category: Salad -->
+      <div class="menu-category" id="salad">
+        <h3>Salad</h3>
+        <div class="menu-grid">
+          <div class="menu-item" data-category="salad">
+            <img src="img/salad&soup/peachsalad.jpg" alt="peach">
+            <h4>Peach salad</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+          <div class="menu-item" data-category="avocado">
+            <img src="img/salad&soup/shrimpavocadosalsasalad.jpg" alt="avocado">
+            <h4>Shrimp Avocado Salsa salad</h4>
+            <p>Rp0.000</p>
+            <button class="add-btn">Add</button>
+          </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- Modal -->
+    <div id="itemModal" class="modal hidden">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <img id="modalImage" src="" alt="Item Image">
+          <h4 id="modalTitle"></h4>
+          <p id="modalPrice"></p>
+          <p id="modalDescription"></p>
+          <button id="addToCartBtn">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Floating Cart Button -->
+    <div id="floatingCart" class="floating-cart">
+        <span id="cartCount">0</span>
+        <img src="img/icon/menu.png" alt="Cart Icon">
+      </div>
+  
+    <!-- Modal Keranjang -->
+    <div id="cartModal" class="cart-modal hidden">
+        <div class="cart-modal-content">
+          <span class="cart-close-btn" onclick="closeCartModal()">&times;</span>
+          <h3>Keranjang Pesanan</h3>
+          <div id="cartItems" class="cart-items"></div>
+          <p id="cartTotalPrice" class="cart-total-price"></p>
+          <button class="cart-checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
