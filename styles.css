@@ -40,6 +40,7 @@
   /* Restaurant Info */
   .restaurant-info {
       padding: 10px;
+      padding-left: 3%;
       text-align: left;
     }
 
@@ -57,43 +58,85 @@
     color: white;
   }
   
-  /* Menu Tabs */
+ /* Wrapper for Swiper Menu */
+.menu-tabs-wrapper {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 2px solid #774d00cb;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+  padding-left: 3%;
+  background-color: white;
+}
+
+.menu-tabs {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  white-space: nowrap; /* Make tabs in one row */
+  scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+.menu-tabs::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Chrome, Safari */
+}
+
+.tab {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #666;
+  padding: 5px 15px;
+  display: inline-block;
+}
+
+.tab.active {
+  color: #b9821bcb;
+  border-bottom: 2px solid #eba627cb; /* Active tab underline */
+}
+
+/* Hamburger Icon */
+.hamburger-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.hamburger-icon:focus {
+  outline: none;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
   .menu-tabs {
-      display: flex;
-      justify-content: flex-start;
-      gap: 15px;
-      border-top: 1px solid #ddd; /* Garis pemisah antara info dan menu */
-      border-bottom: 2px solid #774d00cb; /* Garis bawah untuk menu */
-      padding: 10px 0;
-      background-color: white; /* Pastikan warna latar tetap putih */
-    }
-  
-  /* Hamburger Icon */
-  .hamburger-icon {
-      background: none;
-      border: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      padding: 0 10px;
-    }
-  
-  .hamburger-icon:focus {
-    outline: none;
+    flex: 1;
+    overflow-x: auto;
   }
 
-  .tab {
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-size: 1rem;
-    color: #666;
-    padding: 5px 15px;
+  .menu-tabs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  
-  .tab.active {
-    color: #b9821bcb;
-    border-bottom: 2px solid #eba627cb; /* Garis bawah aktif */
-  }
+}
+
+
+/* Add CSS for 'show' class */
+.menu-tabs.show {
+  position: absolute;
+  top: 50px; /* Adjust as needed */
+  left: 0;
+  right: 0;
+  background: white;
+  flex-wrap: wrap; /* Allow tabs to wrap inside dropdown */
+  z-index: 1000;
+  border: 1px solid #ddd;
+}
 
   /* Floating Search Icon */
 .floating-search {
