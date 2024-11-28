@@ -27,7 +27,7 @@
   header {
     display: flex;
     flex-direction: column; /* Mengatur elemen anak menjadi kolom */
-    padding: 10px 0;
+    padding: 0px 0;
     position: sticky; /* Membuat header tetap terlihat di atas saat scroll */
     top: 0; /* Jarak dari atas halaman */
     background-color: #f9f9f9; /* Warna latar belakang */
@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
   border-top: 1px solid #ddd;
-  border-bottom: 2px solid #774d00cb;
+/*   border-bottom: 1px solid #ddd; */
   overflow: hidden;
   position: relative;
   padding: 10px 0;
