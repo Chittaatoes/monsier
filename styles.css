@@ -167,9 +167,9 @@
 /* Search input field */
 .search-input {
   position: fixed;
-  top: 20%; /* Memposisikan secara vertikal di tengah */
-  left: 50%; /* Memposisikan secara horizontal di tengah */
-  transform: translate(-50%, -50%); /* Menyesuaikan agar elemen benar-benar di tengah */
+  top: calc(var(--header-height) + 1%); /* Berada 1% di bawah header */
+  left: 50%;
+  transform: translateX(-50%); /* Menyelaraskan di tengah secara horizontal */
   width: 90%;
   padding: 10px;
   font-size: 16px;
