@@ -88,61 +88,83 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
   const tabs = document.querySelectorAll(".tab");
   const categories = document.querySelectorAll(".menu-category");
-  
+  const menuTabsWrapper = document.querySelector(".menu-tabs-wrapper");
+  const menuTabs = document.querySelector(".menu-tabs");
+  const hamburger = document.getElementById("hamburger-menu");
+
   // Fungsi untuk menandai tab aktif
   function setActiveTabByCategory(categoryId) {
     tabs.forEach(tab => tab.classList.remove("active")); // Reset semua tab
     const activeTab = document.querySelector(`[onclick="scrollToCategory('${categoryId}')"]`);
     if (activeTab) activeTab.classList.add("active"); // Tandai tab sesuai kategori
+
+    // Geser tab aktif ke arah hamburger
+    scrollActiveTabToLeft(activeTab);
+  }
+
+  // Fungsi untuk menggeser tab aktif ke arah hamburger
+  function scrollActiveTabToLeft(activeTab) {
+    if (!activeTab) return;
+
+    // Hitung jarak dari tab aktif ke tombol hamburger
+    const activeTabPosition = activeTab.offsetLeft;
+    const scrollOffset = activeTabPosition - hamburger.offsetWidth - 10; // Tambahkan jarak sedikit dari hamburger
+
+    // Geser container menu-tabs
+    menuTabs.scrollTo({
+      left: scrollOffset,
+      behavior: "smooth",
+    });
   }
 
   // Intersection Observer untuk memantau kategori
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        setActiveTabByCategory(entry.target.id); // Aktifkan tab sesuai ID kategori
-      }
-    });
-  }, {
-    root: null, // Default viewport
-    threshold: 0.5 // Kategori dianggap terlihat jika 50% masuk viewport
-  });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveTabByCategory(entry.target.id); // Aktifkan tab sesuai ID kategori
+        }
+      });
+    },
+    {
+      root: null, // Default viewport
+      threshold: 0.5 // Kategori dianggap terlihat jika 50% masuk viewport
+    }
+  );
 
   // Observasi setiap kategori
   categories.forEach(category => observer.observe(category));
+
+  // Scroll ke kategori dengan mempertimbangkan tinggi header
+  function scrollToCategory(categoryId) {
+    const categoryElement = document.getElementById(categoryId);
+    const headerHeight = document.querySelector(".container-header").offsetHeight;
+
+    // Hitung posisi scroll dengan mempertimbangkan tinggi header
+    const scrollPosition = categoryElement.offsetTop - headerHeight;
+
+    // Smooth scroll ke posisi yang telah disesuaikan
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: "smooth",
+    });
+
+    // Tambahkan efek interaktif pada tab
+    setActiveTab(categoryId);
+  }
+
+  // Menandai tab aktif
+  function setActiveTab(categoryId) {
+    tabs.forEach(tab => tab.classList.remove("active"));
+    const activeTab = document.querySelector(`[onclick="scrollToCategory('${categoryId}')"]`);
+    if (activeTab) activeTab.classList.add("active");
+    scrollActiveTabToLeft(activeTab); // Pastikan tab aktif digeser ke kiri
+  }
 
   // Set tab aktif default ke "Promo & Package"
   setActiveTabByCategory("promo");
 });
 
-
-// Menghitung tinggi header untuk memastikan kategori tidak tertutup
-function scrollToCategory(categoryId) {
-  const categoryElement = document.getElementById(categoryId);
-  const headerHeight = document.querySelector('.container-header').offsetHeight; // Ambil tinggi header
-  
-  // Hitung posisi scroll dengan mempertimbangkan tinggi header
-  const scrollPosition = categoryElement.offsetTop - headerHeight;
-
-  // Smooth scroll ke posisi yang telah disesuaikan
-  window.scrollTo({
-    top: scrollPosition,
-    behavior: 'smooth',
-  });
-
-  // Tambahkan efek interaktif pada tab
-  setActiveTab(categoryId);
-}
-
-// Menandai tab aktif
-function setActiveTab(categoryId) {
-  // Hapus kelas aktif pada semua tab
-  document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-
-  // Tambahkan kelas aktif pada tab yang sesuai
-  const activeTab = document.querySelector(`[onclick="scrollToCategory('${categoryId}')"]`);
-  if (activeTab) activeTab.classList.add('active');
-}
 
 // Script untuk mengatur status tombol Coffee O'Clock berdasarkan jam
 document.addEventListener("DOMContentLoaded", function () {
