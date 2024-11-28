@@ -71,16 +71,17 @@
   background-color: white;
 }
 
+/* Pastikan menu-tabs memiliki scroll horizontal */
 .menu-tabs {
   display: flex;
   gap: 15px;
-  overflow-x: auto;
-  white-space: nowrap; /* Make tabs in one row */
-  scrollbar-width: none; /* Hide scrollbar on Firefox */
+  overflow-x: auto; /* Aktifkan scroll horizontal */
+  white-space: nowrap;
+  scrollbar-width: none; /* Sembunyikan scrollbar pada Firefox */
 }
 
 .menu-tabs::-webkit-scrollbar {
-  display: none; /* Hide scrollbar on Chrome, Safari */
+  display: none; /* Sembunyikan scrollbar pada Chrome dan Safari */
 }
 
 .tab {
@@ -93,9 +94,10 @@
   display: inline-block;
 }
 
+/* Tab aktif */
 .tab.active {
   color: #b9821bcb;
-  border-bottom: 2px solid #eba627cb; /* Active tab underline */
+  border-bottom: 2px solid #eba627cb;
 }
 
 /* Hamburger Icon */
