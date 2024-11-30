@@ -1,74 +1,80 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: #f9f9f9;
-  }
-  
-  .container-header {
-    width: 100%;
-    background-color: #f9f9f9;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif; /* Font klasik untuk kesan premium */
+}
 
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column; /* Mengatur elemen anak menjadi kolom */
-    padding: 0px 0;
-    position: sticky; /* Membuat header tetap terlihat di atas saat scroll */
-    top: 0; /* Jarak dari atas halaman */
-    background-color: #f9f9f9; /* Warna latar belakang */
-    z-index: 10; /* Memastikan header tetap di atas elemen lainnya */
-    width: 100%; /* Memastikan header melebar ke seluruh layar */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk efek sticky */
-    box-sizing: border-box; /* Memastikan padding tidak memengaruhi lebar */
-  }
-  
-  /* Restaurant Info */
-  .restaurant-info {
-      padding: 10px;
-      padding-left: 3%;
-      text-align: left;
-    }
+body {
+  background: linear-gradient(to bottom, #ffffff, #f3f3f3); /* Gradien lembut untuk kesan mewah */
+  background-size: cover; /* Latar belakang penuh */
+  color: #333; /* Warna teks elegan */
+}
 
-  
-  .order-btn {
-    padding: 5px 15px;
-    border: 1px solid #ddd;
-    background-color: white;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-  
-  .order-btn.active {
-    background-color: #e6a121cb;
-    color: white;
-  }
-  
- /* Wrapper for Swiper Menu */
+.container-header {
+  width: 100%;
+  background: linear-gradient(to right, #ffffff, #f9f9f9); /* Gradien horizontal untuk kesan dinamis */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow halus untuk efek melayang */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, #ffffff, #f8f8f8); /* Latar belakang mewah */
+  z-index: 10;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow yang lebih menonjol */
+  box-sizing: border-box;
+}
+
+.restaurant-info {
+  padding: 15px;
+  padding-left: 3%;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.order-btn {
+  padding: 10px 20px;
+  border: 1px solid #d4af37; /* Border emas */
+  background-color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.order-btn.active {
+  background-color: #b9821b; /* Warna emas gelap */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Efek shadow */
+}
+
+/* Wrapper for Swiper Menu */
 .menu-tabs-wrapper {
   display: flex;
   align-items: center;
   border-top: 1px solid #ddd;
-/*   border-bottom: 1px solid #ddd; */
   overflow: hidden;
   position: relative;
   padding: 10px 0;
   padding-left: 3%;
   background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
 }
 
 /* Pastikan menu-tabs memiliki scroll horizontal */
@@ -92,12 +98,12 @@
   color: #666;
   padding: 5px 15px;
   display: inline-block;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-/* Tab aktif */
 .tab.active {
-  color: #b9821bcb;
-  border-bottom: 2px solid #eba627cb;
+  color: #b9821b; /* Warna emas */
+  border-bottom: 2px solid #b9821b;
 }
 
 /* Hamburger Icon */
@@ -126,6 +132,7 @@
     align-items: center;
   }
 }
+
 
 
 /* Slider Container */
@@ -312,17 +319,33 @@
   .menu-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr); /* Dua kolom pada mobile */
-      gap: 15px;
+      gap: 25px;
   }
 
   .menu-item {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      text-align: center;
-      padding: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* Gradien dengan warna cerah */
+    border: 2px solid #d4af37; /* Border emas lebih tegas */
+    border-radius: 12px; /* Sudut melengkung */
+    text-align: center;
+    padding: 15px 20px; /* Padding cukup besar untuk kesan premium */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow lebih terlihat */
+    transition: none; /* Tidak ada transisi */
+    font-family: 'Playfair Display', serif; /* Font klasik */
+    font-size: 18px;
+    color: #444; /* Warna teks gelap agar kontras */
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    cursor: default; /* Ubah cursor jika hover tidak dibutuhkan */
+}
+
+/* Efek highlight dan dekorasi dihapus */
+.menu-item::before,
+.menu-item::after {
+    content: none;
+}
+
 
   .menu-item img {
       width: 100%;
