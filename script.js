@@ -324,6 +324,90 @@ const menuItems = [
         description: "Healthy food with mix fruit & peanut yang disajikan dengan yogurth (Sweet & SOury).",
         image: "img/brunch/granola.jpg"
       },
+      {
+        id: 13,
+        name: "Wagyu Signature",
+        price: "Rp0.000",
+        description: "Wagyu beef patty, Scrambled eggs, onion, lettuce, cheddar cheese & BBQ sauce on house-made croger bun.",
+        image: "img/sandwich/wagyusignature.jpg"
+      },
+      {
+        id: 14,
+        name: "Buttermilk Chicken",
+        price: "Rp0.000",
+        description: "Crispy buttermilk chicken with mozza cheese, caramelized onion, lettuce and aioil on house-made croger bun (Tasty, Creamy, Crispy outside).",
+        image: "img/sandwich/buttermilkchicken.jpg"
+      },
+      {
+        id: 15,
+        name: "Pulled Brisket & Egg",
+        price: "Rp0.000",
+        description: "Croger with pulled brisket, sunny side up egg, bega cheese & BBQ sauce.",
+        image: "img/sandwich/pulledbrisketandegg.jpg"
+      },
+      {
+        id: 16,
+        name: "Tamago Katsu Mortadella",
+        price: "Rp0.000",
+        description: "Tamago katsu, beef mortadella, tomato, iceberg & Japanese mayo on house-made croger bun.",
+        image: "img/sandwich/tamagokatsumortadella.jpg"
+      },
+      {
+        id: 17,
+        name: "Truffle Scrambled Egg",
+        price: "Rp0.000",
+        description: "Creamy french scrambled eggs, truffle oil, sauted mushrooms & porcini salt.",
+        image: "img/sandwich/truffle scrambled egg.jpg"
+      },
+      {
+        id: 18,
+        name: "Smoked Chicken Croissant",
+        price: "Rp0.000",
+        description: "Smoked chicken, romain lettuce, smoked paprika jam, red onion & Emmental cheese.",
+        image: "img/sandwich/Smoked Chicken Croissant.jpeg"
+      },
+      {
+        id: 19,
+        name: "Double Cheese and Ham",
+        price: "Rp0.000",
+        description: "Cheese croissant, melted Emmental cheese, beef ham, fresh tomato & salad. ADD BEEF BACON/HAM +20.",
+        image: "img/sandwich/doublecheeseandham.jpg"
+      },
+      {
+        id: 20,
+        name: "The Monsier Spoon Club Sandwich",
+        price: "Rp0.000",
+        description: "White toast, rosemary chicken, creamy egg mayo, tomato, lettuce, mozzarella cheese, and aioil (creamy).",
+        image: "img/sandwich/themonsierspoonclubsandwhich.jpg"
+      },
+      {
+        id: 21,
+        name: "French Dip Pulled Beef Baguette",
+        price: "Rp0.000",
+        description: "Baguette, daging sapi suwir yang dimasak perlahan, fondue tomat, bawang karamel, krim parmesan, dan keju mozzarella disajikan dengan saus au jus (saus kaldu daging).",
+        image: "img/sandwich/frenchdippulledbeefbaguette.jpg"
+      },
+      {
+        id: 22,
+        name: "Toasted Mushroom Baguette",
+        price: "Rp0.000",
+        description: "Baguette, sauted mushrooms, garlic butter, mozzarella cheese, and parmesan.",
+        image: "img/sandwich/toastedmushroombaguette.jpg"
+      },
+      {
+        id: 23,
+        name: "Peach Salad",
+        price: "Rp0.000",
+        description: "Mixed greens, peach, feta cheese, red onion, and a sweet chili dressing.",
+        image: "img/salad&soup/peachsalad.jpg"
+      },
+      {
+        id: 24,
+        name: "Shrimp Avocado Salsa Salad",
+        price: "Rp0.000",
+        description: "Garlic sauteéd shrimp, avocado, romaine, and salsa dressing (saus segar & sedikit pedas).",
+        image: "img/salad&soup/shrimpavocadosalsasalad.jpg"
+      },
     // Tambahkan data lainnya
   ];
   
