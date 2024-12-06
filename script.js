@@ -340,86 +340,219 @@ const menuItems = [
       {
         id: 13,
         name: "Wagyu Signature",
-        price: "Rp0.000",
+        price: "Rp95.000",
         description: "Wagyu beef patty, Scrambled eggs, onion, lettuce, cheddar cheese & BBQ sauce on house-made croger bun.",
         image: "img/sandwich/wagyusignature.jpg"
       },
       {
         id: 14,
         name: "Buttermilk Chicken",
-        price: "Rp0.000",
+        price: "Rp69.000",
         description: "Crispy buttermilk chicken with mozza cheese, caramelized onion, lettuce and aioil on house-made croger bun (Tasty, Creamy, Crispy outside).",
         image: "img/sandwich/buttermilkchicken.jpg"
       },
       {
         id: 15,
         name: "Pulled Brisket & Egg",
-        price: "Rp0.000",
+        price: "Rp79.000",
         description: "Croger with pulled brisket, sunny side up egg, bega cheese & BBQ sauce.",
         image: "img/sandwich/pulledbrisketandegg.jpg"
       },
       {
         id: 16,
         name: "Tamago Katsu Mortadella",
-        price: "Rp0.000",
+        price: "Rp75.000",
         description: "Tamago katsu, beef mortadella, tomato, iceberg & Japanese mayo on house-made croger bun.",
         image: "img/sandwich/tamagokatsumortadella.jpg"
       },
       {
         id: 17,
         name: "Truffle Scrambled Egg",
-        price: "Rp0.000",
+        price: "Rp65.000",
         description: "Creamy french scrambled eggs, truffle oil, sauted mushrooms & porcini salt.",
         image: "img/sandwich/truffle scrambled egg.jpg"
       },
       {
         id: 18,
         name: "Smoked Chicken Croissant",
-        price: "Rp0.000",
+        price: "Rp69.000",
         description: "Smoked chicken, romain lettuce, smoked paprika jam, red onion & Emmental cheese.",
         image: "img/sandwich/Smoked Chicken Croissant.jpeg"
       },
       {
         id: 19,
         name: "Double Cheese and Ham",
-        price: "Rp0.000",
+        price: "Rp76.000",
         description: "Cheese croissant, melted Emmental cheese, beef ham, fresh tomato & salad. ADD BEEF BACON/HAM +20.",
         image: "img/sandwich/doublecheeseandham.jpg"
       },
       {
         id: 20,
         name: "The Monsier Spoon Club Sandwich",
-        price: "Rp0.000",
+        price: "Rp75.000",
         description: "White toast, rosemary chicken, creamy egg mayo, tomato, lettuce, mozzarella cheese, and aioil (creamy).",
         image: "img/sandwich/themonsierspoonclubsandwhich.jpg"
       },
       {
         id: 21,
         name: "French Dip Pulled Beef Baguette",
-        price: "Rp0.000",
+        price: "Rp99.000",
         description: "Baguette, daging sapi suwir yang dimasak perlahan, fondue tomat, bawang karamel, krim parmesan, dan keju mozzarella disajikan dengan saus au jus (saus kaldu daging).",
         image: "img/sandwich/frenchdippulledbeefbaguette.jpg"
       },
       {
         id: 22,
         name: "Toasted Mushroom Baguette",
-        price: "Rp0.000",
+        price: "Rp69.000",
         description: "Baguette, sauted mushrooms, garlic butter, mozzarella cheese, and parmesan.",
         image: "img/sandwich/toastedmushroombaguette.jpg"
       },
       {
         id: 23,
         name: "Peach Salad",
-        price: "Rp0.000",
+        price: "Rp65.000",
         description: "Mixed greens, peach, feta cheese, red onion, and a sweet chili dressing.",
         image: "img/salad&soup/peachsalad.jpg"
       },
       {
         id: 24,
         name: "Shrimp Avocado Salsa Salad",
-        price: "Rp0.000",
+        price: "Rp69.000",
         description: "Garlic sauteéd shrimp, avocado, romaine, and salsa dressing (saus segar & sedikit pedas).",
         image: "img/salad&soup/shrimpavocadosalsasalad.jpg"
+      },
+      {
+        id: 25,
+        name: "Watermelon Feta Salad",
+        price: "Rp59.000",
+        description: "Fresh watermelon, feta cheese, olive oil, lemon, and basil.",
+        image: "img/salad&soup/watermelonfetasalad.jpg"
+      },
+      {
+        id: 26,
+        name: "Clasic Caesar Salad",
+        price: "Rp59.000",
+        description: "Romaine lettuce, croutons, boiled egg, bacon, grana padano, and anchovy dressing.",
+        image: "img/salad&soup/classiccaesarsalad.jpg"
+      },
+      {
+        id: 27,
+        name: "Smoked Chicken Salad",
+        price: "Rp75.000",
+        description: "Smoked chicken, romaine lettuce, red onions, cherry tomatoes, and plum sugar dressing.",
+        image: "img/salad&soup/smokedchickensalad.jpg"
+      },
+      {
+        id: 28,
+        name: "Vegetarian Nicoise Salad",
+        price: "Rp65.000",
+        description: "A super summer salad, green beans, cherry tomatoes, kalamata olives, lettuce, and red onions.",
+        image: "img/salad&soup/vegetariannicoisesalad.jpg"
+      },
+      {
+        id: 29,
+        name: "Leafy Green Salad",
+        price: "Rp29.000",
+        description: "A mix of green salad dressed with a house vinaigrette.",
+        image: "img/salad&soup/leafygreensalad.jpeg"
+      },
+      {
+        id: 30,
+        name: "French Onion Soup",
+        price: "Rp55.000",
+        description: "A comforting blend of caramelized onions, melted emmental cheese, and a slice of toasted sourdough bread. Hearty and satisfying.",
+        image: "img/soup/frenchonionsoup.jpg"
+      },
+      {
+        id: 31,
+        name: "Mushroom Soup",
+        price: "Rp59.000",
+        description: "Rich flavor, lembut, dan dipenuhi dengan kebaikan jamur yang earthy. Favorit klasik yang terasa seperti pelukan dalam mangkuk.",
+        image: "img/soup/mushroom soup.jpg"
+      },
+      {
+        id: 32,
+        name: "Pumpkin Soup",
+        price: "Rp59.000",
+        description: "Creamy pumpkin soup swirled with crème fraîche and topped with caramelized onion and feta cheese bruchetta.",
+        image: "img/soup/pumpkin soup.jpg"
+      },
+      {
+        id: 33,
+        name: "Sweet Corn Brulee Soup",
+        price: "Rp55.000",
+        description: "Sup jagung manis panggang, jagung manis panggang, kue jagung kering, dan minyak hijau..",
+        image: "img/soup/sweet corn brule soup.jpg"
+      },
+      {
+        id: 34,
+        name: "Croque Madame",
+        price: "Rp68.000",
+        description: "Creamy bechamel, egg, beef ham, emmental cheese, grana padano, and parsley (Crispy outside creamy inside).",
+        image: "img/sandwich/croquemadame.jpg"
+      },
+      {
+        id: 35,
+        name: "Truffle Egg In Jar",
+        price: "Rp49.000",
+        description: "Telur, mash potato, cheese & mushroom yang di sajikan di dalam jar dengan sourdough (Savoury).",
+        image: "img/brunch/truffleegginjar.jpeg"
+      },
+      {
+        id: 36,
+        name: "Beef Bacon Croquette",
+        price: "Rp65.000",
+        description: "Croquette stuffed with beef bacon and creamy parmesan.",
+        image: "img/sidedish/beefbaconcroquette.jpg"
+      },
+      {
+        id: 37,
+        name: "L'Escargot",
+        price: "Rp82.000",
+        description: "Snails yang di panggang dengan garlic butter, mushroom, beef bacon & spinach (bayam).",
+        image: "img/sidedish/leescargot.jpg"
+      },
+      {
+        id: 38,
+        name: "Gnocchi Chicken Musroom",
+        price: "Rp99.000",
+        description: "Gnocchi served with chicken and sautéed shiitake mushrooms in black pepper sauce).",
+        image: "img/entree/gnochichickenmushroom.jpg"
+      },
+      {
+        id: 39,
+        name: "Sauteed Mushroom",
+        price: "Rp39.000",
+        description: "Campuran tiga jamur lokal yang ditumis ringan dengan butter dan rempah-rempah).",
+        image: "img/entree/sautedmushroom.jpg"
+      },
+      {
+        id: 40,
+        name: "Truffle & Parmesan French Fries",
+        price: "Rp65.000",
+        description: "French fries, parmesan, truffle oil, and porcini salt.",
+        image: "img/sidedish/truffleparmesanfrenchfries.jpg"
+      },
+      {
+        id: 41,
+        name: "Hand Cut French Fries",
+        price: "Rp45.000",
+        description: "Traditionally thin, hand cut, crispy fries....scrumptious!.",
+        image: "img/sidedish/handcutfrenchfries.jpg"
+      },
+      {
+        id: 42,
+        name: "Mashed Potato",
+        price: "Rp37.000",
+        description: "Kentang yang dihaluskan dengan butter dan krim.",
+        image: "img/sidedish/mashedpotato.jpg"
+      },
+      {
+        id: 43,
+        name: "Potato Gratin",
+        price: "Rp37.000",
+        description: "Kentang yang dihaluskan dengan butter, keju dan krim.",
+        image: "img/sidedish/pottatogratin.jpg"
       },
     // Tambahkan data lainnya
   ];
@@ -665,17 +798,50 @@ function showCart() {
     cartModal.style.display = "none";
   }
   
-  // Fungsi untuk checkout (opsional)
-  function checkout() {
-    if (cart.length === 0) {
+// Fungsi untuk menangani checkout
+function checkout() {
+  if (cart.length === 0) {
       alert("Keranjang kosong, tidak bisa checkout.");
       return;
-    }
-    alert("Checkout berhasil! Terima kasih atas pesanan Anda.");
-    cart = []; // Kosongkan keranjang setelah checkout
-    updateCart();
-    closeCartModal();
   }
+
+  let orderMessage = "Request Order:\n";
+
+  // Loop melalui setiap item di keranjang dan menyiapkan pesan
+  cart.forEach((item, index) => {
+      let orderItem = `${index + 1}) ${item.name}`;
+      
+      // Menambahkan catatan jika ada
+      if (item.note && item.note !== "Your Special Request") {
+          orderItem += ` (${item.note})`;
+      }
+      
+      orderMessage += orderItem + "\n";
+  });
+
+  // Menghitung total harga dengan mengakses harga dari menuItems
+  let totalPrice = 0;
+  cart.forEach((item) => {
+      const menuItem = menuItems.find(menu => menu.id === item.id); // Mencari item berdasarkan ID
+      if (menuItem) {
+          // Menghapus simbol Rp dan mengonversi harga ke angka
+          const itemPrice = parseFloat(menuItem.price.replace("Rp", "").replace(".", "").trim());
+          totalPrice += itemPrice * item.quantity; // Menghitung total harga
+      }
+  });
+
+  // Menambahkan total harga ke dalam pesan (sebelum pajak & layanan)
+  orderMessage += `\nTotal harga: Rp${totalPrice.toLocaleString()} (before tax & service)`;
+
+  // Mengarahkan ke WhatsApp dengan pesan pesanan yang sudah diformat
+  const whatsappLink = `https://wa.me/6285172352402/?text=${encodeURIComponent(orderMessage)}`;
+  window.open(whatsappLink, "_blank");
+
+  // Mengosongkan keranjang setelah checkout
+  cart = []; // Mengosongkan keranjang
+  updateCart();
+  closeCartModal();
+}
   
   // Event listener untuk tombol floating cart
   document.getElementById("floatingCart").addEventListener("click", showCart);
