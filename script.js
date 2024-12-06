@@ -43,10 +43,23 @@ menuTabs.addEventListener('mousemove', (e) => {
   menuTabs.scrollLeft = scrollLeft - walk;
 });
 
+// Fungsi untuk scroll ke kategori yang sesuai
+function scrollToCategory(category) {
+  const categoryElement = document.getElementById(category);
+  
+  // Scroll ke elemen kategori dengan smooth scrolling
+  window.scrollTo({
+    top: categoryElement.offsetTop, 
+    behavior: 'smooth'
+  });
+}
+
+// Fungsi toggle untuk menampilkan/hide menu saat hamburger ditekan
 function toggleMenu() {
   const menuTabs = document.querySelector('.menu-tabs');
   menuTabs.classList.toggle('show');
 }
+
 
 // Get the floating search button and input field
 const floatingSearch = document.getElementById('floatingSearch');
