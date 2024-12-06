@@ -69,7 +69,7 @@ header {
   display: flex;
   align-items: center;
   border-top: 1px solid #ddd;
-  overflow: hidden;
+  overflow: hidden; 
   position: relative;
   padding: 10px 0;
   padding-left: 3%;
@@ -412,20 +412,19 @@ header {
     
   
 
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
   }
-
-  /* General Styling for Modal */
+  
   .modal-content {
       background: white;
       padding: 20px;
@@ -434,215 +433,247 @@ header {
       max-width: 400px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       position: relative;
-      text-align: center; /* Pusatkan konten dalam modal */
+      text-align: center;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Tambahkan ini untuk memusatkan elemen vertikal */
+      align-items: center;
   }
 
-  /* Image */
-  #modalImage {
-      width: 100%;
-      height: 500px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+  .modal-baground {
+    background: transparent;
+    backdrop-filter: blur(1px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+ /* Image */
+#modalImage {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+#modalTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Price */
+#modalPrice {
+  font-size: 18px;
+  font-weight: 600;
+  color: #28a745;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Description */
+#modalDescription {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Add to Cart Button */
+#addToCartBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect for Button */
+#addToCartBtn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .modal-baground {
+      height: 100%; /* Full height on mobile */
+      width: 100%; /* Full width on mobile */
+      padding: 0; /* Remove padding */
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 
-  /* Title */
-  #modalTitle {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #333; /* Warna teks lebih gelap */
-      text-align: center; /* Pusatkan teks */
+  .modal-content {
+      width: 90%;
+      max-width: 100%;
+      height: 100%;
+      border-radius: 0;
+      margin: 0;
+      padding: 20px;
   }
 
-  /* Price */
-  #modalPrice {
-      font-size: 18px;
-      font-weight: 600;
-      color: #28a745; /* Warna hijau untuk harga */
-      margin-bottom: 15px;
-      text-align: center; /* Pusatkan teks */
+  .modal {
+      padding: 0;
   }
+}
 
-  /* Description */
-  #modalDescription {
-      font-size: 16px;
-      color: #555; /* Warna teks lebih lembut */
-      line-height: 1.6; /* Tinggi baris untuk keterbacaan */
-      margin-bottom: 20px;
-      text-align: left; /* Teks rata kiri untuk deskripsi */
-  }
-
-  /* Add to Cart Button */
-  #addToCartBtn {
-      background-color: #007bff;
-      color: white;
-      padding: 12px 0; /* Hapus padding horizontal, hanya beri padding vertikal */
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.2s; /* Tambahkan animasi */
-      text-align: center; /* Pusatkan teks */
-      width: 100%; /* Membuat tombol memanjang 100% dari lebar modal */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
-  }
-
-  /* Hover Effect for Button */
-  #addToCartBtn:hover {
-      background-color: #0056b3; /* Warna biru lebih gelap saat dihover */
-      transform: scale(1.05); /* Efek zoom kecil saat dihover */
-  }
-
-
-
-  /* Media Query untuk Mobile */
-  @media (max-width: 768px) {
-      .modal-content {
-          width: 100%;
-          max-width: 100%;
-          height: 100%;
-          border-radius: 0;
-          margin: 0;
-      }
-
-      .modal {
-          padding: 0;
-      }
-  }
-
-  .hidden {
-      display: none;
-  }
-
-  .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: #c0c0c0;
-      color: #000; /* Warna teks */
-      font-size: 24px; /* Sesuaikan ukuran font */
-      cursor: pointer;
-      width: 40px; /* Lebar tombol */
-      height: 40px; /* Tinggi tombol */
-      border-radius: 50%; /* Membuat tombol berbentuk lingkaran */
-      display: flex; /* Untuk memusatkan ikon */
-      align-items: center; /* Pusatkan secara vertikal */
-      justify-content: center; /* Pusatkan secara horizontal */
-      border: none; /* Hapus border default */
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
-      transition: background-color 0.3s; /* Animasi pada hover */
-  }
-
-  .close-btn:hover {
-      background-color: #f1f1f1; /* Warna lebih terang saat dihover */
-  }
-
-    
-
-    
-
-  /* Floating Cart Button */
-  .floating-cart {
+/* Media Query for Tablet/Desktops (larger screens) */
+@media (min-width: 769px) {
+  .modal-baground {
+      height: 100%;
+      width: 50%; /* Modal background on the right for tablets and desktops */
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 60px;
-      height: 60px;
-      background-color: #f39c12; /* Warna oranye yang lebih cerah dan ramah */
-      border-radius: 50%;
+      top: 0;
+      right: 0;
       display: flex;
+      justify-content: flex-start;
       align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      cursor: pointer;
-      z-index: 1000;
-      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
   }
 
-  /* Hover Effect for Floating Cart */
-  .floating-cart:hover {
-      animation: bounce 0.5s ease-in-out; /* Menambahkan animasi bounce saat hover */
-      background-color: #ce8e17cb; /* Warna lebih cerah saat hover (kuning keemasan) */
-      width: 80px; /* Memperbesar tombol saat hover */
-      height: 80px; /* Memperbesar tombol saat hover */
-      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+  .modal-content {
+      width: 100%;
+      max-width: 400px;
+      margin-left: 20px; /* Margin to the left to give space from the right side */
   }
+}
 
-  /* Floating Cart Icon */
-  .floating-cart img {
-      width: 30px;
-      height: 30px;
-      transition: transform 0.3s ease; /* Transisi animasi pada gambar */
-  }
+.hidden {
+  display: none;
+}
 
-  /* Hover effect on the image icon */
-  .floating-cart:hover img {
-      animation: pulse 1s infinite; /* Menambahkan animasi pulse pada gambar */
-  }
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #c0c0c0;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
 
-  /* Cart count circle */
-  #cartCount {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: #ffffff; /* Putih cerah untuk cart count */
-      color: #ce8e17cb; /* Warna oranye cerah untuk teks */
-      width: 20px;
-      height: 20px;
-      font-size: 12px;
-      font-weight: bold;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-  }
+.close-btn:hover {
+  background-color: #f1f1f1;
+}
 
-  /* Hover Effect for Cart Count */
-  .floating-cart:hover #cartCount {
-      transform: translateY(-5px); /* Menggerakkan angka ke atas */
-      background-color: #ffffff; /* Oranye cerah saat hover */
-      color: #ce8e17cb; /* Mengubah teks menjadi putih saat hover */
-  }
+/* Floating Cart Button */
+.floating-cart {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #f39c12;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
 
-  /* Bounce Animation */
-  @keyframes bounce {
-      0% {
-          transform: translateY(0);
-      }
-      20% {
-          transform: translateY(-10px);
-      }
-      40% {
-          transform: translateY(0);
-      }
-      60% {
-          transform: translateY(-5px);
-      }
-      100% {
-          transform: translateY(0);
-      }
-  }
+/* Hover Effect for Floating Cart */
+.floating-cart:hover {
+  animation: bounce 0.5s ease-in-out;
+  background-color: #ce8e17cb;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
 
-  /* Pulse Animation */
-  @keyframes pulse {
-      0% {
-          transform: scale(1);
-      }
-      50% {
-          transform: scale(1.2);
-      }
-      100% {
-          transform: scale(1);
-      }
+.floating-cart img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.floating-cart:hover img {
+  animation: pulse 1s infinite;
+}
+
+#cartCount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffffff;
+  color: #ce8e17cb;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect for Cart Count */
+.floating-cart:hover #cartCount {
+  transform: translateY(-5px);
+  background-color: #ffffff;
+  color: #ce8e17cb;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
   }
+  20% {
+      transform: translateY(-10px);
+  }
+  40% {
+      transform: translateY(0);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
 
 
 
