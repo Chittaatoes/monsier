@@ -587,7 +587,7 @@ const menuItems = [
         name: "Black Truffle Penne",
         price: "Rp95.000",
         description: "Pasta penne cooked with black truffle, cream and cheese parmesan, disajikan dengan sourdough.",
-        image: "img/pasta/angelhairaglioolio.jpg"
+        image: "img/pasta/blacktrufflepenne.jpg"
       },
       {
         id: 49,
