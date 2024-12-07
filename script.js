@@ -554,6 +554,55 @@ const menuItems = [
         description: "Kentang yang dihaluskan dengan butter, keju dan krim.",
         image: "img/sidedish/pottatogratin.jpg"
       },
+      {
+        id: 44,
+        name: "Angel Hair Aglio Olio",
+        price: "Rp139.000",
+        description: "Aglio olio klasik dengan tomat setengah kering, udang raja yang dipanggang dan dimarinasi, serta horenzo.",
+        image: "img/pasta/angelhairaglioolio.jpg"
+      },
+      {
+        id: 45,
+        name: "Taglietelle Bistecca",
+        price: "Rp199.000",
+        description: "Berisikan tagliatelle diberi topping US striploin yang dibakar menggunakan arang & jamur shitake, disiram dengan creamy beef sauce dengan taburan keju parmesan.",
+        image: "img/pasta/Tagliatelle Bistecca.jpg"
+      },
+      {
+        id: 46,
+        name: "Mac N' Cheese",
+        price: "Rp95.000",
+        description: "Macaroni cooked in rich cream, grana padano (italian cheese), and crispy beef bacon.",
+        image: "img/pasta/macncheese.jpg"
+      },
+      {
+        id: 47,
+        name: "Fettucine Beef Ragout",
+        price: "Rp139.000",
+        description: "Classic fettuccine (pasta berbentuk pita lebar) with beef ragout in rich tomato sauce.",
+        image: "img/pasta/Fettuccine Beef Ragout.jpg"
+      },
+      {
+        id: 48,
+        name: "Black Truffle Penne",
+        price: "Rp95.000",
+        description: "Pasta penne cooked with black truffle, cream and cheese parmesan, disajikan dengan sourdough.",
+        image: "img/pasta/angelhairaglioolio.jpg"
+      },
+      {
+        id: 49,
+        name: "Creamy Spaghetti Carbonara With Chicken",
+        price: "Rp105.000",
+        description: "Classic spaghetti carbonara with chicken, beef bacon & parmesan cheese.",
+        image: "img/pasta/Creamy Spaghetti Carbonara with Chicken.jpg"
+      },
+      {
+        id: 50,
+        name: "Wagyu Beef Lasagna",
+        price: "RP99.000",
+        description: "Wagyu beef, Bechamel (saus krim putih terbuat dari mentega) & creamy tomato sauce, grana padano & moza cheese.",
+        image: "img/pasta/wagyubeeflasagna.jpg"
+      },
     // Tambahkan data lainnya
   ];
   
